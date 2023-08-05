@@ -33,7 +33,12 @@ function ErrorComponent3() {
 //jsx roles
 function JSXRoles1() {
   //1- cant return 2 element (must return just one root) -> cause function must return just one thing(object here)
-  // return <p> p tag</p> <h1> h1 tag</h1>
+  return (
+    <Fragment>
+      <p> p tag</p>
+      <h1> h1 tag</h1>
+    </Fragment>
+  );
   // can use react fragment for parenting
 
   return (
